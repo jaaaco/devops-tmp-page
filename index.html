@@ -6,37 +6,49 @@
     <title>Serwis jest niedostępny z powodu konserwacji</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
             text-align: center;
+            padding: 50px;
         }
         .maintenance-container {
-            margin-top: 20vh;
+            background-color: #000;
             padding: 20px;
-            background-color: #fff;
+            border: 1px solid #00ff00;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            display: inline-block;
+        }
+        .prompt {
+            color: #00ff00;
+        }
+        .command {
+            color: #00ff00;
         }
         .maintenance-title {
             font-size: 24px;
-            color: #ff0000;
+            color: #00ff00;
             margin-bottom: 10px;
         }
         .maintenance-message {
             font-size: 18px;
-            color: #333;
             margin-bottom: 20px;
         }
         .phone-number {
             font-size: 20px;
-            color: #007bff;
+            color: #00ff00;
         }
     </style>
 </head>
 <body>
     <div class="maintenance-container">
         <div class="maintenance-title">Serwis jest niedostępny z powodu konserwacji</div>
-        <div class="maintenance-message">Przepraszamy za utrudnienia. Prosimy o kontakt z administratorem w razie pilnej potrzeby.</div>
+        <div class="maintenance-message">
+            Przepraszamy za utrudnienia. Prosimy o kontakt z administratorem w razie pilnej potrzeby.
+        </div>
+        <div class="prompt">$</div>
+        <div class="command">curl -L https://jaaaco.github.io/devops-tmp-page/</div>
         <div class="phone-number">Telefon do administratora: +48 797 332 808</div>
     </div>
 </body>
